@@ -31,7 +31,11 @@
                 <br><br>
                 Number of people paying bill: <input type="number" name="numPaying">
                 <br><br>
-                <input type="submit">
+                <div class="form-row text-center">
+                    <div class="col-12">
+                        <input type="submit" id="submit">
+                    </div>
+                </div>
             </form>
         </div>
     </div>
@@ -45,7 +49,7 @@
                 $tip = round(($total * ($pct / 100)), 2);
                 $result = round(($tip + $total), 2);
     
-                echo "Your tip amount is: $$tip<br>";
+                echo "Your tip amount is: $$tip<br><br>";
                 echo "Your total cost is: $$result<br>";
             ?>
         </div>
