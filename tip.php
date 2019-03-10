@@ -33,7 +33,7 @@
                 <br><br>
                 <div class="form-row text-center">
                     <div class="col-12">
-                        <input type="submit" id="submit">
+                        <input type="submit" id="submit" onclick="display()">
                     </div>
                 </div>
             </form>
@@ -43,14 +43,15 @@
     <div class="card" id="results">
         <div class="card-body align-items-center d-flex justify-content-center">
             <?php
-                $pct = $_GET["tipAmount"];
-                $split = $_GET["numPaying"];
-                $total = $_GET["total"] / $split;
-                $tip = round(($total * ($pct / 100)), 2);
-                $result = round(($tip + $total), 2);
-    
-                echo "Your tip amount is: $$tip<br><br>";
-                echo "Your total cost is: $$result<br>";
+                if (isset($_GET["tipAmount"], $_GET["numPaying"], $_GET["total"])) {
+                    $pct = $_GET["tipAmount"];
+                    $split = $_GET["numPaying"];
+                    $total = $_GET["total"] / $split;
+                    $tip = round(($total * ($pct / 100)), 2);
+                    $result = round(($tip + $total), 2);
+                    echo "Your tip amount is: $$tip<br><br>";
+                    echo "Your total cost is: $$result<br>";
+                }
             ?>
         </div>
     </div>
