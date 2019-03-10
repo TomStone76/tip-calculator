@@ -33,11 +33,11 @@
                 $total = $_GET["total"];
                 $pct = $_GET["tipAmount"];
                 $split = $_GET["numPaying"];
-                $tip = ($total * ($pct / 100));
-                $result = ($tip + $total) / $split;
+                $tip = round(($total * ($pct / 100)), 2);
+                $result = round((($tip + $total) / $split), 2);
     
-                echo "Your tip amount is $$tip.<br>";
-                echo "Your total cost is: $$result.<br>";
+                echo "Your tip amount is: $$tip<br>";
+                echo "Your total cost is: $$result<br>";
             ?>
         </div>
     </div>
