@@ -11,10 +11,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <?php ?>
     
-        <form>
-
+        <form action="tip.php" method="get">
+            Total cost of your meal:      $<input type="number" name="total">
+            <br><br>
+            Percentage you want to tip:   <input type="number" name="tipAmount">%
+            <br><br>
+            Number of people paying bill: <input type="number" name="numPaying">
+            <br><br>
+            <input type="submit">
         </form>
 
 </body>
