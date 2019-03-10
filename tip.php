@@ -14,15 +14,19 @@
 
     <?php ?>
     
-        <form action="tip.php" method="get">
-            Total cost of your meal:      $<input type="number" name="total">
-            <br><br>
-            Percentage you want to tip:   <input type="number" name="tipAmount">%
-            <br><br>
-            Number of people paying bill: <input type="number" name="numPaying">
-            <br><br>
-            <input type="submit">
-        </form>
+    <div class="card">
+        <div class="card-body">
+            <form action="tip.php" method="get">
+                Total cost of your meal:      $<input type="number" name="total">
+                <br><br>
+                Percentage you want to tip:   <input type="number" name="tipAmount">%
+                <br><br>
+                Number of people paying bill: <input type="number" name="numPaying">
+                <br><br>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>
