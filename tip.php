@@ -13,8 +13,16 @@
 </head>
 <body>
 
-    <div class="card">
-        <div class="card-body">
+<div class="container">
+
+    <div class="card" id="title">
+        <div class="card-body align-items-center d-flex justify-content-center">
+            <h1 class="card-title">Tip Calculator</h5>
+        </div>
+    </div>
+
+    <div class="card" id="calculator">
+        <div class="card-body align-items-center d-flex justify-content-center">
             <form action="tip.php" method="get">
                 Total cost of your meal:      $<input type="float" name="total">
                 <br><br>
@@ -27,14 +35,15 @@
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-body">
+    <div class="card" id="results">
+        <div class="card-body align-items-center d-flex justify-content-center">
             <?php
                 $total = $_GET["total"];
                 $pct = $_GET["tipAmount"];
                 $split = $_GET["numPaying"];
-                $tip = round(($total * ($pct / 100)), 2);
-                $result = round((($tip + $total) / $split), 2);
+                $modTotal = $total / $split;
+                $tip = round(($modTotal * ($pct / 100)), 2);
+                $result = round(($tip + $modTotal), 2);
     
                 echo "Your tip amount is: $$tip<br>";
                 echo "Your total cost is: $$result<br>";
@@ -42,6 +51,7 @@
         </div>
     </div>
 
+</div>
 
 </body>
 </html>
