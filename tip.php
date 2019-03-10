@@ -38,12 +38,11 @@
     <div class="card" id="results">
         <div class="card-body align-items-center d-flex justify-content-center">
             <?php
-                $total = $_GET["total"];
                 $pct = $_GET["tipAmount"];
                 $split = $_GET["numPaying"];
-                $modTotal = $total / $split;
-                $tip = round(($modTotal * ($pct / 100)), 2);
-                $result = round(($tip + $modTotal), 2);
+                $total = $_GET["total"] / $split;
+                $tip = round(($total * ($pct / 100)), 2);
+                $result = round(($tip + $total), 2);
     
                 echo "Your tip amount is: $$tip<br>";
                 echo "Your total cost is: $$result<br>";
