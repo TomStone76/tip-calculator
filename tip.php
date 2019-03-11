@@ -45,10 +45,10 @@
             <?php
                 if (isset($_GET["tipAmount"], $_GET["numPaying"], $_GET["total"])) {
                     $pct = $_GET["tipAmount"];
-                    $split = $_GET["numPaying"];
-                    $total = $_GET["total"] / $split;
-                    $tip = round(($total * ($pct / 100)), 2);
-                    $result = round(($tip + $total), 2);
+                    $spl = $_GET["numPaying"];
+                    $ttl = $_GET["total"] / $spl;
+                    $tip = round(($ttl * ($pct / 100)), 2);
+                    $result = round(($tip + $ttl), 2);
                     echo "Your tip amount is: $$tip<br><br>";
                     echo "Your total cost is: $$result<br>";
                 }
