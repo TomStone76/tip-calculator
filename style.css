@@ -15,3 +15,7 @@ h1 {
     width: 75px;
     height: 37.5px;
 }
+
+body {
+    background-color: lightblue;
+}
