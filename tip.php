@@ -16,7 +16,7 @@
 
 <div class="container">
 
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar align-items-center">
         <a class="navbar-brand" href="#">Tip Calculator</a>
     </nav>
 
