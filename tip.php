@@ -16,6 +16,10 @@
 
 <div class="container">
 
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Tip Calculator</a>
+    </nav>
+
     <div class="card" id="title">
         <div class="card-body align-items-center d-flex justify-content-center">
             <h1 class="card-title">Tip Calculator</h5>
