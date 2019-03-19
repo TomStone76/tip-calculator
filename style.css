@@ -2,20 +2,16 @@
     width: 50%;
     margin: 0 auto;
     margin-top: 10px;
-    background-color: lightgray;
-    box-shadow: 2.5px 2.5px 2.5px lightgray;
+    background-color: skyblue;
+    box-shadow: 2.5px 2.5px 2.5px gray;
 }
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    text-shadow: 2.5px 2.5px 2.5px lightgray;
+    text-shadow: 2.5px 2.5px 2.5px gray;
 }
 
 #submit {
     width: 75px;
     height: 37.5px;
-}
-
-body {
-    background-color: lightblue;
 }
